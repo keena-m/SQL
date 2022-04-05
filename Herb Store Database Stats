@@ -1,0 +1,20 @@
+CREATE TABLE herbs (id INTEGER, name TEXT, use TEXT, price INTEGER, inventory_amount INTEGER);
+
+INSERT INTO herbs VALUES (1,"chamomile", "calm", 10,5);
+INSERT INTO herbs VALUES (2, "goats rue", "diabetes", 20,20);
+INSERT INTO herbs VALUES (3, "ceylon", "diabetes",5,25);
+INSERT into herbs values (4, "melatonin", "sleep", 8,1);
+INSERT INTO herbs VALUES (5,"tulsi","anxiety", 15,2);
+INSERT INTO herbs VALUES (6,"berberine", "diabetes",20,1);
+INSERT INTO herbs VALUES (7,"stjohnswort","depression",50,2);
+INSERT INTO herbs VALUES (8, "lavender","stress", 8,6);
+INSERT INTO herbs VALUES (9, "devils claw", "arthritis", 9,10);
+INSERT INTO herbs VALUES (10, "vitex", "fertility",100,16);
+INSERT INTO herbs VALUES (11, "saw palmetto", "prostate", 75,1);
+INSERT INTO herbs VALUES (12, "hawthorne","heart",35,55);
+INSERT INTO herbs VALUES (13,"thyme","lungs",22,6);
+INSERT INTO herbs VALUES (14, "elderberry","flu",20,3);
+INSERT INTO herbs VALUES (15,"hemp","pain",150,23);
+
+SELECT price FROM herbs ORDER BY price desc;
+SELECT AVG (price) FROM herbs
